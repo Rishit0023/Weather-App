@@ -1,0 +1,81 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="st.css">
+</head>
+
+<body>
+    <section class="container">
+
+        <!--Input field search-->
+        <div class="weather_header">
+            <form class="weather_search">
+                <i class="fa-solid fa-magnifying-glass"></i> &nbsp;
+                <input type="text" class="search" placeholder="Search for a city..." />
+            </form>
+        </div>
+
+        <!--Weather main data-->
+        <div class="weather_body">
+            <h1 class="weather_city"></h1>
+            <p class="weather_date_time"></p>
+            <div class="weather_data">
+                <p class="weather_forecast "></p>
+                <div class="weather_icon"></div>
+            </div>
+            <h2 class="weather_temp"></h2>
+            <div class="weather_min_max">
+                <p class="weather_min"></p> &nbsp;
+                <p class="weather_max"></p>
+            </div>
+        </div>
+
+        <!--Weather Extra Data-->
+        <section class="weather_info">
+
+            <div class="weather_card">
+                <i class="fa-solid fa-thermometer"></i>
+                <div>
+                    <p>Feels Like</p>
+                    <p class="weather_feel_like"></p>
+                </div>
+            </div>
+
+            <div class="weather_card">
+                <i class="fa-solid fa-droplet"></i>
+                <div>
+                    <p>Humidity</p>
+                    <p class="weather_humidity"></p>
+                </div>
+            </div>
+
+            <div class="weather_card">
+                <i class="fa-solid fa-wind"></i>
+                <div>
+                    <p>Wind Speed</p>
+                    <p class="weather_wind"></p>
+                </div>
+            </div>
+
+            <div class="weather_card">
+                <i class="fa-solid fa-tachometer-alt"></i>
+                <div>
+                    <p>Pressure</p>
+                    <p class="weather_pressure"></p>
+                </div>
+            </div>
+
+        </section>
+
+    </section>
+    <script src = "Index.js"></script>
+</body>
+
+</html>
